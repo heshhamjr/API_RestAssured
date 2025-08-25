@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Trello API Suite">
+
+    <test name="Board Tests">
+        <classes>
+            <class name="HappyScenario.CreateBoard"/>
+            <class name="HappyScenario.GetBoard"/>
+            <class name="HappyScenario.CreateList"/>
+            <class name="HappyScenario.GetList"/>
+            <class name="HappyScenario.UpdateListName"/>
+            <class name="HappyScenario.CreateCard"/>
+            <class name="HappyScenario.GetCard"/>
+            <class name="HappyScenario.DeleteCard"/>
+            <class name="HappyScenario.DeleteBoard"/>
+
+            
+            <class name="BadScenario.CreateBoardWithoutName"/>
+            <class name="BadScenario.DeleteCardAfterDelete"/>
+            <class name="BadScenario.DeleteBoardAfterDelete"/>
+
+
+
+
+        </classes>
+    </test>
+</suite>
